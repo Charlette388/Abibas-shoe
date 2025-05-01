@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abibas - Step Ahead with Style</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Abibas</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Step Ahead with Style</h1>
+            <a href="#products" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <h2>Our Collection</h2>
+        <div class="filter-buttons">
+            <button class="btn active" data-filter="all">All</button>
+            <button class="btn" data-filter="men">Men's</button>
+            <button class="btn" data-filter="women">Women's</button>
+        </div>
+
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide">
+                    <img src="red black.jpg" alt="Abibas Runner">
+                    <h3>Abibas Runner</h3>
+                    <p>₱3,499</p>
+                </div>
+                <div class="slide">
+                    <img src="white black.jpg" alt="Abibas Lite">
+                    <h3>Abibas Lite</h3>
+                    <p>₱2,999</p>
+                </div>
+                <div class="slide">
+                    <img src="yellow black.png" alt="Abibas Air">
+                    <h3>Abibas Air</h3>
+                    <p>₱1,299</p>
+                </div>
+            </div>
+            <button class="slider-btn prev">&#10094;</button>
+            <button class="slider-btn next">&#10095;</button>
+        </div>
+
+        <div class="product-grid">
+            <div class="product-card" data-category="men">
+                <img src="white black.jpg" alt="Men's Shoe 1">
+                <h3>Abibas Runner</h3>
+                <p>₱2,199</p>
+                <button class="btn">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="men">
+                <img src="orange black.png" alt="Men's Shoe 2">
+                <h3>Abibas Lite</h3>
+                <p>₱1,299</p>
+                <button class="btn">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="women">
+                <img src="sneaker.jpg" alt="Women's Shoe 1">
+                <h3>Abibas Air</h3>
+                <p>₱1,500</p>
+                <button class="btn">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="women">
+                <img src="women shoe.png" alt="Women's Shoe 2">
+                <h3>Abibas Flex</h3>
+                <p>₱2,500</p>
+                <button class="btn">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <span class="error-message"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error-message"></span>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <span class="error-message"></span>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Abibas. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
